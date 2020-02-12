@@ -13,7 +13,7 @@ Creature::Creature(string name, float px, float py, float vx, float vy, float wi
 }
 
 void Creature::OnInteraction(Dynamic* secondDynamic) {
-	cout << "lmao" << endl;
+	cout << this->name << " interacting with " << secondDynamic->getName() << endl;
 }
 
 

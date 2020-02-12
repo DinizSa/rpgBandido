@@ -12,6 +12,8 @@ protected:
 	bool friendly;
 	bool hasFriction;
 	int maxSpeed;
+	enum{SOUTH = 0, WEST = 1, NORTH = 2, EAST = 3} facingDirection;
+	enum{STANDING, WALKING} graphicState;
 
 public:
 	Dynamic();

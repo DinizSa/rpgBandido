@@ -16,10 +16,8 @@ void Assets::LoadTextures() {
 	};
 
 	// Load assets
-	load("Town1", "assets/tiles/tile.png");
-	load("BG", "assets/BG.png");
-	load("DinoStand1", "assets/dino/Idle (1).png");
-	load("characterBits", "assets/tiles/SpritesBits.png");
+	load("CharactersBits", "assets/tiles/CharactersBits.png");
 	load("WildBits", "assets/tiles/MapsBits.png");
 	load("Bandido", "assets/tiles/Bandido.png");
+	load("Coelho", "assets/tiles/Coelho.png");
 }

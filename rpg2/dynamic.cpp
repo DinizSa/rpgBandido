@@ -9,11 +9,13 @@ Dynamic::Dynamic():
 	this->vy = 0;
 	this->hasFriction = true;
 	this->maxSpeed = 0;
+	facingDirection = SOUTH;
+	graphicState = STANDING;
 }
 Dynamic::~Dynamic() {
 }
 Dynamic::Dynamic(string name, float px, float py, float vx, float vy, float width, float height, bool solidVsSolid, bool solidVsDynamic, bool friendly, bool hasFriction, int maxSpeed) :
-	Entity(name, px, py, width, height)	{
+	Entity(name, px, py, width, height)	{\
 	this->solidVsSolid = solidVsSolid;
 	this->solidVsDynamic = solidVsDynamic;
 	this->friendly = friendly;
@@ -21,6 +23,8 @@ Dynamic::Dynamic(string name, float px, float py, float vx, float vy, float widt
 	this->vy = vy;
 	this->hasFriction = hasFriction;
 	this->maxSpeed = maxSpeed;
+	facingDirection = SOUTH;
+	graphicState = STANDING;
 }
 void Dynamic::move(Maps& map, int windowW, int windowH) {
 	float widthLandscape = windowW / map.getNrHorizontal();

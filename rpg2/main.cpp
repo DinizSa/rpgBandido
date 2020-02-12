@@ -13,8 +13,8 @@ int main()
     InputHandler inputHandler;
     Maps mapOne("map1.txt", "Wild", window.getSize().x, window.getSize().y);
     Creature player("Bandido", 100, 100, 0, 0, 34, 34, 1, 1, 1, 100, 3);
-    //player.addVelocityX(5);
-    //player.addVelocityY(5);
+    Creature coelho("Coelho", 700, 500, 0, 0, 50, 50, 1, 1, 1, 50, 7);
+
     while (window.isOpen())
     {
         // Update
@@ -28,7 +28,7 @@ int main()
 
         mapOne.draw(&window);
         player.draw(&window);
-
+        coelho.draw(&window);
         window.display();
     }
 
