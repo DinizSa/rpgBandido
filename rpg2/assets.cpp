@@ -1,7 +1,8 @@
 #include "assets.h"
 
 Assets::Assets() {
-
+	mapSizeSprite["EarthBender"] = 34;
+	mapSizeSprite["FireLady"] = 34;
 }
 
 Assets::~Assets() {
@@ -16,8 +17,17 @@ void Assets::LoadTextures() {
 	};
 
 	// Load assets
-	load("CharactersBits", "assets/tiles/CharactersBits.png");
-	load("WildBits", "assets/tiles/MapsBits.png");
+	//load("tileCharacters", "assets/tiles/tileCharacters.png");
+	load("Map", "assets/tiles/tileMap.png");
 	load("Bandido", "assets/tiles/Bandido.png");
 	load("Coelho", "assets/tiles/Coelho.png");
+
+	load("EarthBender", "assets/tiles/tileEarthBender4.png");
+	load("FireLady", "assets/tiles/FireLady4.png");
+	//load("FireLady", "assets/tiles/tileFireLady.png");
+	load("PackMan", "assets/tiles/tilePackMan.png");
+	load("UnpackMan", "assets/tiles/tileUnpackMan.png");
+	load("Rabbit", "assets/tiles/tileRabbit.png");
+
+	
 }

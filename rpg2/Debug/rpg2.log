@@ -1,19 +1,6 @@
-﻿  creature.cpp
-  dynamic.cpp
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(30,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(31,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(82,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(86,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(94,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(99,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  inputHandler.cpp
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\inputHandler.cpp(20,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\inputHandler.cpp(22,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\inputHandler.cpp(24,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\inputHandler.cpp(26,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  interactive.cpp
-  main.cpp
+﻿  main.cpp
+C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\main.cpp(47,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\main.cpp(54,27): warning C4018: '<': signed/unsigned mismatch
+  textDrawer.cpp
   Generating Code...
-C:\Users\dasa\Desktop\rpg2\rpg2\rpg2\dynamic.cpp(59): warning C4172: returning address of local variable or temporary: entity
-  LINK : C:\Users\dasa\Desktop\rpg2\rpg2\Debug\rpg2.exe not found or not built by the last incremental link; performing full link
   rpg2.vcxproj -> C:\Users\dasa\Desktop\rpg2\rpg2\Debug\rpg2.exe

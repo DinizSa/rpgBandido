@@ -19,6 +19,9 @@ public:
 	sf::Texture& GetTexture(string name) {
 		return m_mapsTextures[name];
 	}
+	int GetSizeSprite(string name) {
+		return mapSizeSprite[name];
+	}
 
 	void LoadTextures();
 
@@ -28,4 +31,5 @@ private:
 	Assets();
 	~Assets();
 	map<string, sf::Texture> m_mapsTextures;
+	map<string, int> mapSizeSprite;
 };
