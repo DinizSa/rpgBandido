@@ -10,7 +10,7 @@ public:
 	~cTextDrawer();
 
 	void drawText(sf::RenderWindow* window);
-	void setText(string name, string text);
+	void setText(string name, string text, sf::Color color);
 	void removeText(string name);
 
 private:

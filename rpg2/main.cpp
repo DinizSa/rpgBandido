@@ -20,17 +20,19 @@ int main()
     Assets::get().LoadTextures();
     InputHandler inputHandler;
     Maps mapOne("map1.txt", "Map", window.getSize().x, window.getSize().y);
-    Creature player("EarthBender", 100, 50, 0, 0, 34, 34, 1, 1, 1, 100, 2);
-    Creature coelho("FireLady", 550, 500, 0, 0, 34, 34, 1, 1, 1, 50, 1);
+    Creature player("EarthBender", 50, 50, 0, 0, 34, 34, 1, 1, 1, 100, 2);
+    Creature coelho("FireLady", 550, 500, 0, 0, 34, 34, 1, 1, 1, 50, 2);
 
     cTextDrawer textDrawer;
-    cCommand_Talk commandTalk(&textDrawer, "start conversation", "Hi Mark Zuckerberg");
+    cCommand_Talk commandTalkConv00(&textDrawer, "hi", "Yo lil punks", 3000, sf::Color::Blue);
+    cCommand_Talk commandTalkConv01(&textDrawer, "coffee", "Café?", 2000, sf::Color::Blue);
 
     // Commands
     cScriptProcessor scriptProcessor;
-    cCommand_MoveTo comandToMove(&coelho, 150, 50);
+    cCommand_MoveTo comandToMove(&coelho, player.getPosX(), player.getPosY());
     scriptProcessor.AddCommand(&comandToMove);
-    scriptProcessor.AddCommand(&commandTalk);
+    scriptProcessor.AddCommand(&commandTalkConv00);
+    scriptProcessor.AddCommand(&commandTalkConv01);
 
     vector<Dynamic*> vDynamic;
     vDynamic.push_back(&player);
