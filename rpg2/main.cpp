@@ -9,7 +9,7 @@
 #include "command_MoveTo.h"
 #include "commands.h"
 #include "textDrawer.h"
-
+#include "command_Talk.h"
 
 int main()
 {
@@ -20,20 +20,21 @@ int main()
     Assets::get().LoadTextures();
     InputHandler inputHandler;
     Maps mapOne("map1.txt", "Map", window.getSize().x, window.getSize().y);
-    Creature player("EarthBender", 100, 100, 0, 0, 34, 34, 1, 1, 1, 100, 2);
+    Creature player("EarthBender", 100, 50, 0, 0, 34, 34, 1, 1, 1, 100, 2);
     Creature coelho("FireLady", 550, 500, 0, 0, 34, 34, 1, 1, 1, 50, 1);
+
+    cTextDrawer textDrawer;
+    cCommand_Talk commandTalk(&textDrawer, "start conversation", "Hi Mark Zuckerberg");
 
     // Commands
     cScriptProcessor scriptProcessor;
-    cCommand_MoveTo comandToMove(&coelho, 100, 50);
+    cCommand_MoveTo comandToMove(&coelho, 150, 50);
     scriptProcessor.AddCommand(&comandToMove);
+    scriptProcessor.AddCommand(&commandTalk);
 
     vector<Dynamic*> vDynamic;
     vDynamic.push_back(&player);
     vDynamic.push_back(&coelho);
-
-
-    cTextDrawer textDrawer("olá amigo");
 
 
     while (window.isOpen())

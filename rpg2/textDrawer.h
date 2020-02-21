@@ -7,13 +7,13 @@ using namespace std;
 class cTextDrawer {
 public:
 	cTextDrawer();
-	cTextDrawer(string text);
 	~cTextDrawer();
 
 	void drawText(sf::RenderWindow* window);
-	void setText(string text);
+	void setText(string name, string text);
+	void removeText(string name);
 
 private:
-	sf::Text text;
 	sf::Font font;
+	map<string, sf::Text> _mapTexts;
 };
